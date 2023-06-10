@@ -33,7 +33,7 @@ button:hover a {
   --primary-color: #7257fa;
   --secondary-color: #3c3852;
   max-width: 300px;
-  min-height: 150px;
+  min-height: 200px;
   padding: 1rem;
   cursor: pointer;
   border-radius: var(--border-radius);
