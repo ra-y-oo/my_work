@@ -25,7 +25,7 @@ header .navbar-logo a:hover {
 }
 header .navbar {
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 header .navbar li {
   list-style: none;
