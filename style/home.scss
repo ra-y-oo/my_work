@@ -5,8 +5,11 @@
     --purp: #F2A1FF;
     --grayish: hsl(210, 10%, 33%);
 }
+.home{
+   min-height: 100dvh;
+   padding-top: 20rem;
+}
 section{
-    /* min-height: 100dvh; */
     padding-inline: 50px;
     margin-bottom: 50px;
 }
