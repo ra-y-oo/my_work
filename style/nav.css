@@ -37,4 +37,5 @@ header .navbar li a {
 header .navbar li a:hover {
   text-decoration: underline;
   color: var(--blue);
+  transition: 300ms;
 }/*# sourceMappingURL=nav.css.map */
