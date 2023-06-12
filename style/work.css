@@ -74,13 +74,6 @@ section{
     transform: translateX(3px);
   }
 
-@media (min-width: 800px) {
-    .work{
-        flex-direction: row;
-        gap: 10rem;
-      }
-}
-
   .card {
       margin-top: 30px;
       max-width: 300px;
