@@ -4,9 +4,10 @@ section{
 }
 .work{
     padding-inline: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2rem;
 }
 .card-s {
     --border-radius: 0.75rem;
