@@ -164,8 +164,7 @@ button:hover{
     margin: 10px;
     border-radius: 1rem;
     background: #e8e8e8;
-    box-shadow: 5px 5px 20px #c5c5c5,
-           -5px -5px 20px #ffffff;
+    box-shadow: 0 0 10px #c5c5c5;
     transition: 0.3s;
    }
    
@@ -278,8 +277,7 @@ button:hover{
       min-height: 400px;
       background: white;
       border-radius: 30px;
-      box-shadow: 15px 15px 30px #bebebe,
-                 -15px -15px 30px #ffffff;
+      box-shadow:  0 0 15px #bebebe;
       transition: 0.2s ease-in-out;
       .img {
           width: 100%;
