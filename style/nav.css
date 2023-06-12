@@ -9,7 +9,7 @@
 header {
   padding: 30px;
   gap: 10rem;
-  position: fixed;
+  position: sticky;
   top: 0;
   font-size: 1.6rem;
   display: flex;

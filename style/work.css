@@ -5,9 +5,8 @@ section{
 .work{
     padding-inline: 40px;
     display: grid;
-    gap: 1rem;
+    gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 2rem;
 }
 .card-s {
     --border-radius: 0.75rem;
@@ -76,7 +75,7 @@ section{
 
   .card {
       margin-top: 30px;
-      max-width: 300px;
+      max-width: 350px;
       min-height: 400px;
       background: white;
       border-radius: 30px;
