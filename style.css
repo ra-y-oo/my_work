@@ -95,9 +95,15 @@ button a {
   }
 }
 /* HOME_STYLES */
+.top {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
 .home {
   height: 100dvh;
-  padding-top: 20rem;
+  padding-top: 25rem;
 }
 .home h1 h2 {
   font-size: 3.2rem;
