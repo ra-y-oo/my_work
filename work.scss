@@ -46,6 +46,29 @@ header{
     p{
         color: var(--grayish);
     }
+    .buttons{
+        display: flex;
+        gap: 20px;
+        .icon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                font-size: 0.6rem;
+                text-decoration: none;
+                color: var(--blue);
+            }
+            img{
+                height: 30px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+
+        }
+
+
+    }
     button{
         padding: 10px 20px;
         border-radius: 20px;
