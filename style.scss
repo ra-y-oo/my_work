@@ -21,7 +21,7 @@ html{
 p{
   max-width: 70ch;
   color: var(--grayish);
-  font-size: 2rem;
+/*   font-size: 2rem; */
 }
 body,
 h1,
@@ -43,6 +43,7 @@ h2,
 h3,
 p{
     margin-bottom: 1em;
+    font-size: 2rem;
 }
 
 img{
@@ -97,8 +98,13 @@ button a{
 .home{
    height: 100dvh;
    padding-top: 25rem;
-   h1 h2{
-    font-size: 3.2rem;
+   .main{
+    h1{
+      font-size: 3.2rem;
+    }
+    h2{
+      font-size: 3.2rem;
+    }
    }
    p{
     font-size: 3rem;
@@ -187,7 +193,7 @@ button:hover{
    .contact-info{
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     .info{
         box-shadow: none;
     }
@@ -203,44 +209,49 @@ button:hover{
 }
 
  /* SKILL CARD */
-
+.services{
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
 .card-s {
     --border-radius: 0.75rem;
     --primary-color: #7257fa;
     --secondary-color: #3c3852;
-    max-width: 210px;
+    max-width: 300px;
     min-height: 200px;
-    padding: 1rem;
-    cursor: pointer;
+    padding-inline: 20px;
+    padding-block: 10px;
     border-radius: var(--border-radius);
     background: #f1f1f3;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.03);
     position: relative;
+    .card__content{
+      font-size: 1.4rem;
+    }
   }
 .card-s > * + * {
     margin-top: 1.1em;
   }
-.card-s .card__content {
-    color: var(--secondary-color);
-    font-size: 2rem;
-  }
+
 .card-s .card__title {
     padding: 0;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: bold;
   }
 .card-s .card__arrow {
-    position: absolute;
+    position: sticky;
     background: var(--primary-color);
     padding: 0.4rem;
     border-top-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     bottom: 0;
-    right: 0;
     transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer; 
   }
 .card-s .card__arrow button {
     border: none;
@@ -283,7 +294,7 @@ button:hover{
   .card {
       margin-top: 30px;
       max-width: 350px;
-      min-height: 400px;
+      min-height: 200px;
       background: white;
       border-radius: 30px;
       box-shadow:  0 0 15px #bebebe;
@@ -291,12 +302,12 @@ button:hover{
       .img {
           width: 100%;
           height: 40%;
-          border-top-left-radius: 30px;
-          border-top-right-radius: 30px;
           display: flex;
           align-items: top;
           justify-content: center;
           img{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
               object-fit: cover;
           }
         }
