@@ -336,7 +336,7 @@ section {
   margin-top: 15px;
   width: 70%;
   padding: 10px;
-  background-color: #e3fff9;
+  background-color: var(--blue);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -345,6 +345,7 @@ section {
 .icon-box img {
   height: 20px;
   width: 20px;
+  margin-block: auto;
 }
 
 .icon-box svg {
@@ -367,7 +368,7 @@ section {
   margin-block: auto;
   font-size: 2.4rem;
   font-weight: 500;
-  color: #9198e5;
+  color: var(--fontCol);
   text-decoration: none;
 }
 
