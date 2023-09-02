@@ -224,12 +224,14 @@
       <a target="blank" href="https://www.linkedin.com/in/webbyrayoo/"><img src="./images/linkedin.png" alt=""></a>
       <a target="blank" href="https://www.behance.net/omororyan7967"><img src="./images/behance.png" alt=""></a>
      </div>
-  <form action="" id="form">
+  <form action="https://formsubmit.co/5fe083b0bba65405fc2a694c44be649d" id="form" method="POST">
     <div class="contact-info">
-      <input id="fName" placeholder="First name" class="input info" name="text" type="text">
-      <input id="email" placeholder="youremail@email.com" class="input info" name="text" type="text">
-      <input id="message" placeholder="Talk to me..." class="input" name="text" type="text">
-      <button>Send</button>
+      <input type="hidden" name="_subject" value="New Message!">
+      <input type="hidden" name="_captcha" value="false">
+      <input id="fName" placeholder="John" class="input info" name="name" type="text" required>
+      <input id="email" placeholder="your@email.com" class="input info" name="email" type="email" required>
+      <input id="message" placeholder="Talk to me..." class="input" name="message" type="text">
+      <button type="submit">Send</button>
   </div>
   </form>
   </section>
