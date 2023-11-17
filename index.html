@@ -1,245 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>webbyrayoo</title>
-  <link rel="icon" href="./images/icons8-spider-96.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script defer src="./type.js"></script>
+    <title>webbyrayoo</title>
 </head>
 <body>
-  <header>
-    <div class="navbar-logo"><a href="#home">.rayoo</a></div>
-    <nav class="navbar">
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-      </ul>
-
+    <nav>
+        <div class="flex-inline container">
+            <img src="./images/Asset 2.svg" alt="webbyrayoo logo" class="logo">
+            <button class="menu-btn" onclick="menu.showModal()" id="btn"><a href="#" class="jam-menu"><img src="./images/jam_menu.svg" alt="menu" ></a></button>
+            <ul class="desk-nav nav-items ">
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>Work</li>
+                <li>FAQs</li>
+            </ul>
+        </div>
+        
+        <dialog id="menu">
+            <form method="dialog">
+                <div class="mobile-nav">
+                    <ul class="nav-items">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><button class="close" onclick="quote.closeModal()">
+                            <img src="./images/icon-close.svg" alt="">
+                        </button></li>
+                    </ul>
+                </div>
+            </form>
+        </dialog>
     </nav>
-  </header>
-  
-<main>  
-  <section class="home" id="home">
-    <div class="top">
-      <img src="./images/Saly-10.png" alt="">
+    <div class="container">
+        <div class="hero">
+            <article class="hero-txt">
+                <h1>Growing your <span class="auto-type blue-txt">passion</span> <br>through the power of good design.</h1>
+            </article>
+            <button class="btn"><a href="#" class="btn-link">See our plans</a></button>
+        </div>
     </div>
-    <div class="mask main">
-      <h1 class="hide">Hi,</h1>
-      <h2 class="hide">I'm Ryan I help <span class="blue">Build the Web</span></h2>
+    <div class="marque">
+        <marquee behavior="" direction="">
+            <a class="animate" target="_blank" href="#"><img src="./images/carrentdisplay.png" alt=""></a>
+            <a class="animate" target="_blank" href="#"><img src="./images/wemadisplay.png" alt=""></a>
+            <a class="animate" target="_blank" href="#"><img src="./images/carrentdisplay.png" alt=""></a>
+            <a class="animate" target="_blank" href="#"><img src="./images/wemadisplay.png" alt=""></a>
+        </marquee>
     </div>
-    <div class="mask">
-      <p class="hide">
-        A creative web developer with a keen eye for design, combining technical expertise and artistic flair for visually stunning websites.
-      </p>
+
+    <section class="container">
+        <article>
+            <h2 class="about">
+                Webbyrayoo is a creative design agency dedicated to hepling businesses reach their highest potential through impactful advertising, web design & brand work.
+            </h2>
+        </article>
+    </section>
+
+    <marquee behavior="" direction="">
+        <div class="marque marquee">
+            <h1>Discover Our Work</h1>
+            <h1>Discover Our Work</h1>
+            <h1>Discover Our Work</h1>
+            <h1>Discover Our Work</h1>
+        </div>
+    </marquee>
+
+    <section class="container">
+        <div class="portfolio container">
+            <div class="flex-inline work">
+                <h2>Wema House</h2>
+                <img src="./images/bxs_up-arrow.svg" alt="">
+            </div>
+        </div>
+        <div class="portfolio container">
+            <div class="flex-inline work">
+                <h2>Wema House</h2>
+                <img src="./images/bxs_up-arrow.svg" alt="">
+            </div>
+        </div>
+        <div class="portfolio container">
+            <div class="flex-inline work">
+                <h2>Wema House</h2>
+                <img src="./images/bxs_up-arrow.svg" alt="">
+            </div>
+        </div>
+        <button class="btn"><a href="#" class="btn-link">More from us</a></button>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="card-sm container flex-block">
+                <div class="icon"></div>
+                <h1>Eco-friendly designs.</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <h2>Plans for all sizes</h2>
+        <p>Simple, transparent pricing plans for you</p>
     </div>
-    <div class="mask">
-      <button class="hide"><a href="#contact">Get in touch</a></button>
-      <button class="hide"><a href="#portfolio">View portfolio</a></button>
-    </div>
-  </section>
-  
-  <section class="about" id="about">
-    <h2>About</h2>
-    <p>
-      I'm Ryan a Web developer and UI designer.
-    </p>
-    <p>
-      As a Web developer and UI designer, I am passionate about creating beautiful, functional, and user-friendly websites that leave a lasting impression. With a keen eye for design and a deep understanding of the latest web development technologies, I am dedicated to crafting websites that not only look great but also perform flawlessly. Whether it's a simple landing page or a complex e-commerce platform, I approach every project with the same level of attention to detail and commitment to excellence. So if you're looking for a web developer and UI designer who can bring your vision to life, look no further!
-    </p>
-    <button> 
-      <a href="https://docs.google.com/document/d/14JiLQ4c35blx_cWqFibcMD2MbcpisZm15yfabKWFdKg/edit?usp=sharing">
-      Resume</a>
-    </button>
 
-    <h2>My Services</h2>
-    <div class="services">
-    <div class="card-s">
-      <h3 class="card__title">Web design
-      </h3>
-      <p class="card__content"> I am responsible for creating the overall look and feel of a website. </p>
-
-      <div class="card__arrow">
-        <button> <a href="#portfolio">see my work</a></button>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-              <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-          </svg>
-      </div>
-  </div>
-  <div class="card-s">
-    <h3 class="card__title">UX design
-    </h3>
-    <p class="card__content">Creating an intuitive and engaging user experience. </p>
-
-    <div class="card__arrow">
-      <button> <a href="#portfolio">see my work</a></button>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-        </svg>
-    </div>
-</div>
-
-<div class="card-s">
-  <h3 class="card__title">Responsive Design
-  </h3>
-  <p class="card__content">I ensure that websites are optimized for various screen sizes. </p>
-
-  <div class="card__arrow">
-    <button> <a href="#portfolio">see my work</a></button>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-      </svg>
-  </div>
-</div>
-
-<div class="card-s">
-  <h3 class="card__title">Front-end Development
-  </h3>
-  <p class="card__content">I implement designs by coding the user interface and ensuring it functions correctly. </p>
-
-  <div class="card__arrow">
-    <button> <a href="#portfolio">see my work</a></button>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-      </svg>
-  </div>
-</div>
-
-<div class="card-s">
-  <h3 class="card__title">Search Engine Optimization
-  </h3>
-  <p class="card__content">I have knowledge of SEO principles and best practices. </p>
-
-  <div class="card__arrow">
-    <button> <a href="#portfolio">see my work</a></button>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-      </svg>
-  </div>
-</div>
-<div class="card-s">
-  <h3 class="card__title">CMS Integration
-  </h3>
-  <p class="card__content">I can integrate websites with CMS platforms like WordPress. </p>
-
-  <div class="card__arrow">
-    <button> <a href="#portfolio">see my work</a></button>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-      </svg>
-  </div>
-</div>
-<div class="card-s">
-  <h3 class="card__title">Website Maintenance
-  </h3>
-  <p class="card__content"> After the initial design and development, I provide ongoing website maintenance services. </p>
-
-  <div class="card__arrow">
-    <button> <a href="#portfolio">see my work</a></button>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-      </svg>
-  </div>
-</div>
-    </div>
-  </section>
-  
-  <section class="portfolio" id="portfolio">
-    <h2>Here are some of my work</h2>
-    <div class="work">
-      <div class="card">
-        <div class="img">
-          <a href="work.html" ><img src="./images/weather.png" alt=""> </a>
+    <section class="container pricing flex-inline">
+        <div class="flex-block">
+            <div class="card container">
+                <div class="flex-block">
+                    <img src="./images/gg_check-r.svg" class="logo" alt="">
+                    <p class="blue-txt"> Basic plan</p>
+                    <h1 class="price">$180</h1>
+                    <p>Best for individuals and small start-ups</p>
+                </div>
+                <ul class="flex-block">
+                    <li>Access to all basic features</li>
+                    <li>Access to all basic features</li>
+                    <li>Access to all basic features</li>
+                    <li>Access to all basic features</li>
+                </ul>
+                <button><a href="#">Get Started</a></button>
+                <a href="#">Book a call</a>
+            </div>
         </div>
-      
-        <div class="text">
-          <p class="h3"> Weather App </p>
-          <p class="p"> Stay informed about the weather with a user-friendly web app and accurate weather updates. </p>
-      
-          <div class="icon-box">
-            <img src="./images/new-tab-48.png" alt="">
-            <a href="work.html" class="span">Check it out
-          </a></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img">
-          <a href="age.html"> <img src="./images/age-calc.jpg" alt=""> </a>
-        </div>
-      
-        <div class="text">
-          <p class="h3"> Age calculator </p>
-          <p class="p"> Simple and efficient age calculator that quickly determines your age based on your birthdate. </p>
-      
-          <div class="icon-box">
-            <img src="./images/new-tab-48.png" alt="">
-            <a href="age.html" class="span">Check it out
-            </a></div>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="img">
-          <a href="tip.html"> <img src="./images/tip-calc.jpg" alt=""> </a>
-        </div>
-      
-        <div class="text">
-          <p class="h3"> Tip calculator </p>
-          <p class="p"> Effortlessly split the bill and calculate tips with an accurate tip calculator/bill splitter app. </p>
-      
-          <div class="icon-box">
-            <img src="./images/new-tab-48.png" alt="">
-            <a href="tip.html" class="span">Check it out
-            </a></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img">
-          <a href="landing.html"><img src="./images/landing.jpg" alt=""> </a>
-        </div>
-      
-        <div class="text">
-          <p class="h3"> Clipboard Landing Page </p>
-          <p class="p"> Responsive Landing page front end design </p>
-      
-          <div class="icon-box">
-            <img src="./images/new-tab-48.png" alt="">
-            <a href="landing.html" class="span">Check it out
-            </a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="contact" id="contact">
-    <h2>Love to hear from you,</h2>
-    <h2>Get in touch👋</h2>
-    <div class="socials">
-      <a target="blank" href="https://twitter.com/_ray00_"><img src="./images/twitter.png" alt=""></a>
-      <a target="blank" href="https://www.instagram.com/webbyrayoo/"><img src="./images/instagram.png" alt=""></a>
-      <a target="blank" href="https://www.linkedin.com/in/webbyrayoo/"><img src="./images/linkedin.png" alt=""></a>
-      <a target="blank" href="https://www.behance.net/omororyan7967"><img src="./images/behance.png" alt=""></a>
-     </div>
-  <form action="https://formsubmit.co/5fe083b0bba65405fc2a694c44be649d" id="form" method="POST">
-    <div class="contact-info">
-      <input type="hidden" name="_subject" value="New Message!">
-      <input type="hidden" name="_captcha" value="false">
-      <input id="fName" placeholder="John Doe" class="input info" type="text" name="name" required>
-      <input id="email" placeholder="your@email.com" class="input info" name="email" type="email" required>
-      <input id="message" placeholder="Talk to me..." class="input" name="message" type="text">
-      <button type="submit">Send</button>
-  </div>
-  </form>
-  </section>
-</main>
-
-  <script src="index.js"> </script>
+    </section>
 </body>
 </html>
-
-
-<!--  let's code our way to success! With just a few clicks, you'll be amazed at what we can create together. So what are you waiting for? Let's build something amazing! -->
